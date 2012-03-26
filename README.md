@@ -27,7 +27,7 @@ Rails.application.config.middleware.use OmniAuth::Strategies::GitHub,
   GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET
 
 Rails.application.config.middleware.use Warden::Manager do |manager|
-  manager.scope_defaults :team_member, :strategies => [:github_team_member]
+  manager.scope_defaults :team_member, :strategies => [:opensesame_github]
   manager.failure_app = lambda { |env| HomeController.action(:show).call(env) }
 end
 ```
@@ -44,7 +44,7 @@ class MyApplication < Sinatra::Base
   use OmniAuth::Strategies::GitHub, GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET
 
   use Warden::Manager do |manager|
-    manager.scope_defaults :team_member, :strategies => [:github_team_member]
+    manager.scope_defaults :team_member, :strategies => [:opensesame_github]
     manager.failure_app = lambda { |env| HomeController.action(:show).call(env) }
   end
 end
@@ -55,7 +55,5 @@ Configure your Github organization:
 ```ruby
 # Rails config/initializers/omniauth.rb or Sinatra app.rb
 
-OpenSesame::Github.configure do |c|
-  c.organization = 'challengepost'
-end
+OpenSesame::Github.organization_name = 'challengepost'
 ```
