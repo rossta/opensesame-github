@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/orgs/challengepost/members
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+      connection:
+      - close
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.0.13
+      date:
+      - Mon, 26 Mar 2012 21:45:32 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      status:
+      - 200 OK
+      x-ratelimit-limit:
+      - '5000'
+      etag:
+      - ! '"1c8e46953df6f011d11144e376a72ad4"'
+      x-ratelimit-remaining:
+      - '4997'
+      content-encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7XXy4rUUBAG4HdpcDd2V9W5CyK4cOMjiMi51OnJmE4PuQiD
+        +O6eHme6o1kkBrJoyCJJ1f9ROVR/+bk7tv6H7337rUq7d7sM4AiUt84lT0TS
+        xughGEOeo4tud7cb2rrceN/3j927w8E/Vvtj1d8PYR/Pp8PQcdsdwnfuuprb
+        cvfLy/9+qOM4tLx/Lf385J8bD3MNfEjvr6VLd3ve++/+5Kt9w/3Bdx333aif
+        N/SpOvkjd+Xitdr4+i1K2D82x9LoJT4qIYyku119PlZNSXkN8uvuXymbQ7DZ
+        qWiFS8nkmLyW0sqAIgedaKnUueZuhdNc+Y2dCAyasdNzjKmSit44djYo65Ci
+        lhFI+ZApEiV0uEwpnuv0MNRPK5zmGtjUSYNResR0zTGFEsAuOOEck1KQfbYS
+        WAUmLJ9itHIZ1P25rp/wMnv/+93N1d/USVoyAm7j9BpjykSJIAGnqBxGw1KR
+        LB8fE6N3GJxexvQQT0O97nyaa2BTJwKrYOR0zTGFSmCN4khojIHEyednJw3Z
+        CqOEWgjV+rquunOzYqLmOthWCgXp20A9XHNMpVhYEJYU6EwiaxCsKAdbDnan
+        gT0vk/rMP6rm47k5+rZfgTXXxKZYqKQej9VfWaZgEXJZEDwGjEp6maTBACEI
+        G7JInM0ysJNvm6fuVFaHFVxzLWzKpZ1zRt6Ga5RkikXOSTRSeNDl1LI+orOc
+        bSw/tsxhIVaVhhVMc8U3ZUJbNqPRYXW6ZJgCJSlSFFoaGRJ4UsTJgUlSK8Ry
+        bi2cpqYaypq3gmiu/KZE5TzXRLdJekkxRWJEc1mkgCnIEGUQUstybIXELmmI
+        y6ao5X5om74d1kDNtbAplHICzQhqlGSKFQC188Zmq9Dp8m/GJi3KYu8ToDRp
+        4Y7Qnruu9ysmaq78plCI2ojbQL2EmBpFjzmgVEahypf9PKMGx4wKfCK/cD3o
+        hgQNnlYgzdXfFkkYZ0dKrzF+ff0NaaJBrxAPAAA=
+    http_version: '1.1'
+  recorded_at: Mon, 26 Mar 2012 21:45:32 GMT
+recorded_with: VCR 2.0.0
