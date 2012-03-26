@@ -1,3 +1,6 @@
+require 'warden'
+require 'omniauth-github'
+
 module OpenSesame
   module Github
     extend self
@@ -7,7 +10,6 @@ module OpenSesame
     autoload :Collection, 'opensesame/github/collection'
     autoload :Organization, 'opensesame/github/organization'
     autoload :TeamMember, 'opensesame/github/team_member'
-    autoload :Strategy, 'opensesame/github/strategy'
 
     def organization_name
       @@organization_name
@@ -28,4 +30,5 @@ module OpenSesame
   end
 end
 
-require "opensesame/github/version"
+require 'opensesame/github/version'
+require 'opensesame/github/strategy'
