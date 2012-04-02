@@ -4,8 +4,9 @@ module OpenSesame::Github
     lazy_attr_reader :id, :login, :url, :avatar_url, :gravatar_id
 
     class << self
+
       def organization
-        @organization ||= OpenSesame::Github.organization
+        OpenSesame::Github.organization
       end
 
       def serialize_into_session(record)

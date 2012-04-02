@@ -7,7 +7,8 @@ module OpenSesame
           "provider" => 'github',
           "uid" => team_member.id
         }
-        organization = mock('Organization', :find_team_member => team_member)
+        organization = mock('Organization')
+        organization.stub!(:find_team_member => team_member)
         OpenSesame::Github.stub(:organization).and_return(organization)
         team_member
       end

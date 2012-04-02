@@ -15,7 +15,7 @@ module OpenSesame
         if team_member = organization.find_team_member(omniauth["uid"])
           success! team_member
         else
-          fail 'Authentication'
+          fail 'Sorry, you do not have access'
         end
       end
 

@@ -20,11 +20,17 @@ module OpenSesame
     end
 
     def organization
-      Organization.new(:name => organization_name)
+      @@organization ||= Organization.new(:name => organization_name)
     end
 
     def api
       @@api ||= API.new
+    end
+
+    def reset!
+      @@organization_name = nil
+      @@organization = nil
+      @@api = nil
     end
 
   end
