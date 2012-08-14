@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   s.add_dependency 'warden'
   s.add_dependency 'omniauth-github'
-  s.add_dependency 'faraday', '0.8.0.rc2'
+  s.add_dependency 'faraday', '~> 0.8'
   s.add_dependency 'faraday_middleware'
 
   s.add_development_dependency "rspec", "~> 2.8.0"
